@@ -21,7 +21,7 @@
   "contributors": [
     "Nikolai Avdeev <nickkolok@mail.ru>",
   ],
-  "license": "MIT",
+  "license": "LGPLv3",
   "dependencies": {
     "bignumber.js": "^7.0.0"
   },
