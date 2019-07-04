@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Aisse-258/json-bigint.git"
+    "url": "git@github.com:Aisse-258/bigint-json-native.git"
   },
   "keywords": [
     "JSON",
