@@ -18,9 +18,7 @@
     "json"
   ],
   "author": "Andrey Sidorov <sidorares@yandex.ru>",
-  "contributors": [
-    "Nikolai Avdeev <nickkolok@mail.ru>",
-  ],
+  "contributors": "Nikolai Avdeev <nickkolok@mail.ru>",
   "license": "LGPLv3",
   "dependencies": {
     "bignumber.js": "^7.0.0"
