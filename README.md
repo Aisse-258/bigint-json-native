@@ -1,8 +1,7 @@
-json-bigint
+bigint-json-native
 ===========
 
-[![Build Status](https://secure.travis-ci.org/sidorares/json-bigint.png)](http://travis-ci.org/sidorares/json-bigint)
-[![NPM](https://nodei.co/npm/json-bigint.png?downloads=true&stars=true)](https://nodei.co/npm/json-bigint/)
+[![NPM](https://nodei.co/npm/bigint-json-native.png?downloads=true&stars=true)](https://nodei.co/npm/bigint-json-native/)
 
 JSON.parse/stringify with bigints support. Based on Douglas Crockford [JSON.js](https://github.com/douglascrockford/JSON-js) package and [bignumber.js](https://github.com/MikeMcl/bignumber.js) library.
 
@@ -13,7 +12,7 @@ While most JSON parsers assume numeric values have same precision restrictions a
 example:
 
 ```js
-var JSONbig = require('json-bigint');
+var JSONbig = require('bigint-json-native');
 
 var json = '{ "value" : 9223372036854775807, "v2": 123 }';
 console.log('Input:', json);
@@ -55,8 +54,8 @@ Setting options.strict = true will fail-fast on such duplicate-key occurances an
 
 example:
 ```js
-var JSONbig = require('json-bigint');
-var JSONstrict = require('json-bigint')({"strict": true});
+var JSONbig = require('bigint-json-native');
+var JSONstrict = require('bigint-json-native')({"strict": true});
 
 var dupkeys = '{ "dupkey": "value 1", "dupkey": "value 2"}';
 console.log('\n\nDuplicate Key test with both lenient and strict JSON parsing');
@@ -88,8 +87,8 @@ Note that this is a dangerous behavior as it breaks the default functionality of
 
 example:
 ```js
-var JSONbig = require('json-bigint');
-var JSONbigString = require('json-bigint')({"storeAsString": true});
+var JSONbig = require('bigint-json-native');
+var JSONbigString = require('bigint-json-native')({"storeAsString": true});
 var key = '{ "key": 1234567890123456789 }';
 console.log('\n\nStoring the BigInt as a string, instead of a BigNumber');
 console.log('Input:', key);
@@ -142,12 +141,12 @@ Full support out-of-the-box, stringifies BigInts as pure numbers (no quotes, no 
 
 #### Parsing
 ```js
-var JSONbigString = require('json-bigint')({"BigNumber": BigInt, "noNew": true});
+var JSONbigString = require('bigint-json-native')({"BigNumber": BigInt, "noNew": true});
 ```
 If you want to force all numbers to be parsed as `BigInt`s
 (you probably do! Otherwise any calulations become a real headache):
 ```js
-var JSONbigString = require('json-bigint')({"BigNumber": BigInt, "noNew": true, "forceBig": true});
+var JSONbigString = require('bigint-json-native')({"BigNumber": BigInt, "noNew": true, "forceBig": true});
 ```
 You should take care of `BigInt` to be defined.
 No built-in checks for this are implemented.
