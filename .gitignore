@@ -7,6 +7,10 @@ lib-cov
 *.pid
 *.gz
 .*.swp
+*_LOCAL_*
+*_BACKUP_*
+*_BASE_*
+*_REMOTE_*
 node_modules
 
 pids
