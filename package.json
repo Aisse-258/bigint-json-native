@@ -19,7 +19,7 @@
   ],
   "author": "Andrey Sidorov <sidorares@yandex.ru>",
   "contributors": "Nikolai Avdeev <nickkolok@mail.ru>",
-  "license": "LGPLv3",
+  "license": "LGPL-3.0",
   "dependencies": {
     "bignumber.js": "^7.0.0"
   },
